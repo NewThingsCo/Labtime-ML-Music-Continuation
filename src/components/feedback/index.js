@@ -10,7 +10,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-  
+
     };
 };
 
@@ -35,7 +35,7 @@ class Feedback extends React.Component {
     render() {
         const {currentOutput} = this.props;
 
-        if(!currentOutput.output){
+        if(!currentOutput || !currentOutput.output){
             return null;
         }
 

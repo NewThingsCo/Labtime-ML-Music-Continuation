@@ -32,7 +32,7 @@ class MusicMaker extends React.Component {
     render() {
         const {currentOutput} = this.props;
 
-        if(!currentOutput.output){
+        if(!currentOutput || !currentOutput.output){
             return null;
         }
 

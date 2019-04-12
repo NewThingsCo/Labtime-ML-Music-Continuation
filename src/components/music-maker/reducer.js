@@ -11,11 +11,11 @@ const musicReducer = (state = initialState, action) => {
     const {player} = state
 
     switch (action.type) {
-        case PLAY_WITH_RNN:
+        case 'PLAY_WITH_RNN':
             return ({
                 ...state
             })
-        case PLAY_WITH_VAE:
+        case 'PLAY_WITH_VAE':
             return ({
                 ...state
             })
